@@ -1,5 +1,5 @@
 #openCV form Scratch
-
+#chapter-01
 import cv2 # importing opencv-python package
 import numpy as np #importing numpy for matrices
 print("package installed sucessfully !")
@@ -27,7 +27,7 @@ imgGray=cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)#converting RGB to GREY scale
 imgBlur=cv2.GaussianBlur(imgGray,(7,7),0)#blurring image
 imgCanny=cv2.Canny(img,100,100)#to detect edges
 imgDilation=cv2.dilate(imgCanny,kernel,iterations=1) #apply a morphological filter to images
-imgEroded=cv2.erode(imgCanny,kernel,iterations=1) #erodes boundaries of foreground object
+imgEroded=cv2.erode(imgDilation,kernel,iterations=1) #erodes boundaries of foreground object
 
 cv2.imshow("Grey img",imgGray)# display grey scale image
 cv2.imshow("blur img",imgBlur)# display blur image
