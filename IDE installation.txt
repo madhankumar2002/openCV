@@ -1,0 +1,10 @@
+To learn openCV, we need an IDE to program. I use pyCharm .
+link: https://www.jetbrains.com/pycharm/
+
+download pycharm from this link and create new project in the name openCV. Further create .py files under the projects for every chapter in the name of chapter_xx.py
+
+In case of playing with images, videos make sure to add your resources in the pycharm folder by just copy pasting.
+
+Head on to chapter-01, learn the code ,make use of comments and try yourself. 
+
+Happy Learning :)
